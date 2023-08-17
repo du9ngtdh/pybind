@@ -12,7 +12,7 @@ ext_modules = [
     Pybind11Extension(
         module_name,
         [source_file],
-        cxx_std=14,
+        cxx_std=11,
     ),
 ]
 
@@ -24,4 +24,3 @@ setup(
     description="A Python C++ extension example",
     ext_modules=ext_modules,
 )
-# python setup.py build_ext --inplace
